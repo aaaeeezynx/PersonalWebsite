@@ -13,14 +13,33 @@
 }
 
 .title__card {
-    top: 650px;
-    left: 650px;
+    margin-top: 650px;
+    margin-left: 650px;
     width: 60%;
     padding: 60px 40px;
     flex-wrap: wrap;
-    background-color: #fff;
-}
 
-.media{
-    width: 220px;
+    .media {
+        width: 220px;
+    }
+}
+.service{
+    width: 80%;
+    height: 320px;
+    margin: 64px auto;
+    .service__img{
+        width: 60%;
+        height: 320px;
+    }
+    .service__card{
+        width: 45%;
+        padding: 30px;
+    }
+    .card-r{
+        left: 55%;
+    }
+    .card-l{
+        right: 55%;
+        
+    }
 }

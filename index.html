@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="scss/all.css" />
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -39,32 +39,96 @@
     <div class="bg__area relative">
       <div class="bg absolute">
         <div class="bg__img">
-          <img src="/imgs/card__bg-l.jpg" alt="" />
+          <img src="/imgs/card__bg-1.jpg" alt="BackgroundPicture1" />
         </div>
         <div class="bg__img">
-          <img src="/imgs/card__bg-r.jpg" alt="" />
+          <img src="/imgs/card__bg-2.jpg" alt="BackgroundPicture2" />
         </div>
       </div>
 
       <div class="title__area text-primary absolute">
-        <h1 class="title__lg">Alyse Wang</h1>
-        <p class="title__md">前端工程師 & 職涯諮詢師</p>
+        <h1 class="title__xl">Alyse Wang</h1>
+        <p class="title__md fw-bold">前端工程師 & 職涯諮詢師</p>
       </div>
+    </div>
+    <div class="title__card bg-white fs-3">
+      <p>嗨，我是 Alyse 一名深耕前端技術的工程師。</p>
+      <p>
+        擅長 React、Vue
+        等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
+      </p>
+      <div class="media d-flex justify-content-evenly">
+        <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+        <a href="https://podcasts.apple.com/tw/browse"
+          ><i class="bi bi-broadcast-pin"></i
+        ></a>
+        <a href="https://www.facebook.com/?locale=zh_TW"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a
+        ><a href="https://www.instagram.com/"
+          ><i class="bi bi-instagram"></i
+        ></a>
+      </div>
+    </div>
 
-      <div class="title__card fs-3 absolute">
-        <p>嗨，我是 Alyse 一名深耕前端技術的工程師。</p>
-        <p>
-          擅長 React、Vue
-          等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
-        </p>
-        <div class="media d-flex justify-content-evenly">
-          <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
-          <a href="https://podcasts.apple.com/tw/browse"><i class="bi bi-broadcast-pin"></i></a>
-          <a href="https://www.facebook.com/?locale=zh_TW"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a
-          ><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+    <div class="warp">
+      <h2 class="title__lg mb-2 fw-bold">專業服務與方案</h2>
+
+      <div class="service d-flex aic relative">
+        <div class="service__img">
+          <img src="/imgs/service1.jpg" alt="ServicePicture1" />
+        </div>
+        <div class="service__card card-r bg-white absolute">
+          <p class="b-b text-primary"></p>
+          <h3 class="fw-bold">履歷健檢</h3>
+          <p>
+            履歷是打開機會之門的第一步。讓我協助你突顯專業技術與核心能力，並透過簡短模擬面試為你加分，讓面試官第一眼就被你吸引。
+          </p>
         </div>
       </div>
+
+      <div class="service d-flex flex-row-reverse aic relative">
+        <div class="service__img">
+          <img src="/imgs/service2.jpg" alt="ServicePicture1" />
+        </div>
+        <div class="service__card card-l bg-white absolute">
+          <p class="b-b text-primary"></p>
+          <h3 class="fw-bold">線上諮詢</h3>
+          <p>
+            想快速解決前端學習瓶頸，或需要專業職涯指引？透過線上一對一諮詢，我將協助你更有方向地邁進。
+          </p>
+        </div>
+      </div>
+
+      <div class="service d-flex aic relative">
+        <div class="service__img">
+          <img src="/imgs/service3.jpg" alt="ServicePicture1" />
+        </div>
+        <div class="service__card card-r bg-white absolute">
+          <p class="b-b text-primary"></p>
+          <h3 class="fw-bold">網頁開發</h3>
+          <p>
+            想打造高效能、具美感的網站？我提供從需求訪談到架構實作的一站式服務，讓你的品牌與產品在線上脫穎而出。
+          </p>
+        </div>
+      </div>
+
+      <div class="service d-flex flex-row-reverse aic relative">
+        <div class="service__img">
+          <img src="/imgs/service4.jpg" alt="ServicePicture1" />
+        </div>
+        <div class="service__card card-l bg-white absolute">
+          <p class="b-b text-primary"></p>
+          <h3 class="fw-bold">企業內訓</h3>
+          <p>
+            想讓團隊快速掌握前端最新技術或優化現有專案流程？我可協助打造專業、實用的企業內訓課程，一次解決團隊痛點。
+          </p>
+        </div>
+      </div>
+
+      <h2 class="title__lg mb-2 fw-bold">部落格精選</h2>
+      <ul id="contentList"></ul>
     </div>
 
     <script

@@ -9838,12 +9838,21 @@ textarea.form-control-lg {
   position: absolute;
 }
 
+.aic {
+  align-items: center;
+}
+
 .bd {
   border: 1px solid black;
 }
 
-.title__lg {
+.title__xl {
   font-size: 120px;
+  font-weight: 900;
+}
+
+.title__lg {
+  font-size: 64px;
 }
 
 .title__md {
@@ -9864,11 +9873,17 @@ textarea.form-control-lg {
   width: 50%;
   vertical-align: middle;
 }
-.bg__img img {
+
+img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.b-b {
+  width: 10%;
+  border-bottom: 5px solid;
 }
 
 .warp {
@@ -9886,14 +9901,132 @@ textarea.form-control-lg {
 }
 
 .title__card {
-  top: 650px;
-  left: 650px;
+  margin-top: 650px;
+  margin-left: 650px;
   width: 60%;
   padding: 60px 40px;
   flex-wrap: wrap;
-  background-color: #fff;
+}
+.title__card .media {
+  width: 220px;
 }
 
-.media {
-  width: 220px;
+.service {
+  width: 80%;
+  height: 320px;
+  margin: 64px auto;
+}
+.service .service__img {
+  width: 60%;
+  height: 320px;
+}
+.service .service__card {
+  width: 45%;
+  padding: 30px;
+}
+.service .card-r {
+  left: 55%;
+}
+.service .card-l {
+  right: 55%;
+}
+
+.search-area {
+  position: relative;
+}
+
+.search {
+  max-width: 416px;
+  width: 416px;
+  height: 56px;
+  padding: 0 50px;
+  margin-top: 80px;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+
+i {
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+li {
+  max-width: 416px;
+  margin: 40px 8px;
+  box-sizing: border-box;
+}
+
+.c-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.date {
+  color: #000000;
+  margin: 8px 0;
+}
+
+.tagArea {
+  display: flex;
+}
+.tagArea .tag {
+  font-size: 24px;
+  color: #0027D5;
+  text-decoration: none;
+}
+.tagArea .hot {
+  border-radius: 40px;
+  padding: 6px 12px;
+  margin-left: 8px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #0027D5;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.detial {
+  margin: 8px 0;
+  color: #4B4B4B;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+}
+
+.read {
+  padding: 8px 16px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 40px;
+  border: 1px solid black;
+  color: black;
+  transition: all 0.3s ease;
+}
+.read:hover {
+  background-color: #000000;
+  color: white;
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=all.css.map */

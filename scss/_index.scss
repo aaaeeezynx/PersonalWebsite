@@ -18,28 +18,33 @@
     width: 60%;
     padding: 60px 40px;
     flex-wrap: wrap;
-
-    .media {
-        width: 220px;
-    }
 }
-.service{
+
+.media {
+    width: 220px;
+}
+
+.service {
     width: 80%;
     height: 320px;
     margin: 64px auto;
-    .service__img{
+
+    .service__img {
         width: 60%;
         height: 320px;
     }
-    .service__card{
+
+    .service__card {
         width: 45%;
         padding: 30px;
     }
-    .card-r{
+
+    .card-r {
         left: 55%;
     }
-    .card-l{
+
+    .card-l {
         right: 55%;
-        
+
     }
 }

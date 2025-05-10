@@ -9932,6 +9932,21 @@ img {
   right: 55%;
 }
 
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
 .search-area {
   position: relative;
 }

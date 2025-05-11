@@ -9886,6 +9886,78 @@ img {
   border-bottom: 5px solid;
 }
 
+/* 隱藏 Owl Carousel 預設箭頭樣式（使用更高特異性選擇器） */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: #B2BEF2 !important; /* 自訂背景顏色 */
+  border-radius: 50%; /* 圓形按鈕 */
+  color: #fff !important; /* 圖標顏色 */
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  transition: background 0.3s;
+  background-image: none !important; /* 確保隱藏預設背景圖標 */
+  border: none !important; /* 移除可能存在的邊框 */
+  outline: none !important; /* 移除焦點外框 */
+}
+
+/* 懸停效果 */
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background: #0027D5 !important;
+}
+
+/* 箭頭位置 */
+.owl-carousel .owl-nav button.owl-prev {
+  left: -50px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: -50px;
+}
+
+/* 使用 Bootstrap Icons */
+.owl-carousel .owl-nav button.owl-prev::before,
+.owl-carousel .owl-nav button.owl-next::before {
+  display: inline-block;
+  font-family: "bootstrap-icons" !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* 左箭頭：bi-chevron-left */
+.owl-carousel .owl-nav button.owl-prev::before {
+  content: "\f12f"; /* Bootstrap Icons 的 chevron-left 字元碼 */
+}
+
+/* 右箭頭：bi-chevron-right */
+.owl-carousel .owl-nav button.owl-next::before {
+  content: "\f138"; /* Bootstrap Icons 的 chevron-right 字元碼 */
+}
+
+/* 確保圖標居中並調整大小 */
+.owl-carousel .owl-nav button.owl-prev i,
+.owl-carousel .owl-nav button.owl-next i {
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* 額外確保隱藏任何預設內容 */
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next span {
+  display: none !important; /* 隱藏可能存在的 span 標籤內容 */
+}
+
 .warp {
   max-width: 1296px;
   margin: 0 auto;
@@ -9930,21 +10002,6 @@ img {
 }
 .service .card-l {
   right: 55%;
-}
-
-.owl-nav .owl-prev,
-.owl-nav .owl-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.owl-nav .owl-prev {
-  left: -30px;
-}
-
-.owl-nav .owl-next {
-  right: -30px;
 }
 
 .search-area {
@@ -10006,9 +10063,11 @@ li {
 }
 .tagArea .hot {
   border-radius: 40px;
-  padding: 6px 12px;
+  height: 30px;
+  padding: 0 10px;
   margin-left: 8px;
   text-align: center;
+  line-height: 2;
   font-weight: bold;
   color: white;
   background-color: #0027D5;
@@ -10046,4 +10105,17 @@ li {
   background-color: #000000;
   color: white;
   transition: all 0.3s ease;
+}
+
+.success__main-img {
+  height: 626px;
+  width: 60%;
+  border: 24px solid #EDEDED;
+}
+
+.success__card {
+  width: 40%;
+  padding: 50px 50px;
+  top: 50px;
+  left: 600px;
 }/*# sourceMappingURL=all.css.map */

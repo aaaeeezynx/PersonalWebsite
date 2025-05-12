@@ -1,3 +1,8 @@
+body {
+    background-color: #FBFBFB;
+    z-index: -1;
+}
+
 .relative {
     position: relative;
 }
@@ -6,7 +11,7 @@
     position: absolute;
 }
 
-.aic{
+.aic {
     align-items: center;
 }
 
@@ -26,13 +31,16 @@
 .title__md {
     font-size: 28px;
 }
+
 .title__sm {
     font-size: 20px;
 }
-.h-90px{
+
+.h-90px {
     height: 90px;
 }
-.mt-80px{
+
+.mt-80px {
     margin-top: 80px;
 }
 
@@ -57,7 +65,7 @@ img {
     object-fit: cover;
 }
 
-.b-b{
+.b-b {
     width: 30px;
     border-bottom: 5px solid;
 }

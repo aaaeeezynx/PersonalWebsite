@@ -9830,6 +9830,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: #FBFBFB;
+  z-index: -1;
+}
+
 .relative {
   position: relative;
 }
@@ -9992,11 +9997,15 @@ img {
   width: 220px;
 }
 
+.sub__bg {
+  right: 50%;
+}
+
 .sub__card {
   width: 800px;
   height: 490px;
   padding: 80px;
-  z-index: 3;
+  z-index: 10;
 }
 .sub__card .sub__input {
   width: 100%;

@@ -39,19 +39,35 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul class="nav justify-content-center fs-3">
-        <li class="nav-item">
-          <a class="nav-link active text-secondary" aria-current="page" href="#"
+    <nav class="navbar h-90px fw-bold fs-3 navbar-expand-lg sticky-top bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav h-100 d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link text-secondary active" aria-current="page" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">部落格</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item text-center h-90px">
+          <a class="nav-link active text-secondary fs-3 fw-bold" aria-current="page" href="/index.html"
             >首頁</a
           >
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary" href="/blog.html">部落格</a>
+        <li class="nav-item text-center h-90px">
+          <a class="nav-link text-secondary fs-3 fw-bold" href="/blog.html">部落格</a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
 
+    <!-- 自我介紹 -->
     <div class="bg__area relative">
       <div class="bg absolute">
         <div class="bg__img">
@@ -86,6 +102,7 @@
       </div>
     </div>
 
+    <!-- 專業服務與方案 -->
     <div class="warp">
       <h2 class="title__lg mb-2 fw-bold">專業服務與方案</h2>
 
@@ -140,9 +157,11 @@
         </div>
       </div>
 
+      <!-- 部落格精選 -->
       <h2 class="title__lg mb-2 fw-bold">部落格精選</h2>
       <ul class="owl-carousel" id="contentList"></ul>
 
+      <!-- 成功案例 -->
       <h2 class="title__lg mb-2 fw-bold">職涯諮詢成功案例</h2>
       <div class="success mt-4 relative">
         <div class="success__main-img">
@@ -171,44 +190,129 @@
             立即預約諮詢
           </button>
         </div>
-
         <ul class="success__list mt-5" id="successList"></ul>
       </div>
     </div>
 
-    <div class="bg__area relative">
-      <div class="bg absolute">
+    <!-- 訂閱電子報 -->
+    <div class="bg__area">
+      <div class="bg mt-80px relative">
         <div class="bg__img">
-          <img src="/imgs/card__bg-1.jpg" alt="BackgroundPicture1" />
+          <img src="/imgs/card__bg-3.jpg" alt="BackgroundPicture3" />
         </div>
-        <div class="bg__img">
+        <div class="bg__img d-flex justify-content-center align-items-center">
           <img src="/imgs/card__bg-2.jpg" alt="BackgroundPicture2" />
+          <div class="sub__card absolute bg-white fs-3">
+            <h2 class="title__lg mb-2 fw-bold">訂閱電子報</h2>
+            <p class="title__sm">
+              立即訂閱，搶先掌握<span class="text-primary">前端 x 職涯</span
+              >的獨家資訊！
+            </p>
+            <input
+              class="sub__input title__sm"
+              type="text"
+              name="sub__name"
+              placeholder="請輸入您的大名"
+            />
+            <input
+              class="sub__input title__sm"
+              type="text"
+              name="sub__mail"
+              placeholder="請輸入您的電子信箱"
+            />
+            <button
+              type="button"
+              class="btn btn-outline-primary rounded-pill mt-4"
+            >
+              啟動訂閱
+            </button>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="title__area text-primary absolute">
-        <h1 class="title__xl">Alyse Wang</h1>
-        <p class="title__md fw-bold">前端工程師 & 職涯諮詢師</p>
-      </div>
+    <!-- 與我聯繫 -->
+    <div class="warp">
+      <h2 class="title__lg mb-2 fw-bold mt-80px">與我聯繫</h2>
+      <ul class="flex-column">
+        <li
+          class="mw-100 my-3 d-flex justify-content-between border-bottom fs-3"
+        >
+          <p>
+            <a class="fs-2 text-reset mx-2">alysewang@hexschool.com</a>
+            合作洽談
+          </p>
+          <i class="bi bi-arrow-right"></i>
+        </li>
+        <li class="mw-100 my-3 border-bottom fs-3">
+          <a
+            class="text-reset text-decoration-none d-flex justify-content-between"
+            href="https://www.youtube.com/"
+          >
+            <span>
+              <i class="bi bi-youtube text-primary mx-2"></i>
+              Youtube 職涯諮詢室
+            </span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </li>
+        <li class="mw-100 my-3 border-bottom fs-3">
+          <a
+            class="text-reset text-decoration-none d-flex justify-content-between"
+            href="https://www.podcast.apple.com/tw/browse"
+          >
+            <span>
+              <i class="bi bi-broadcast-pin text-primary mx-2"></i>
+              podcast 職涯諮詢室
+            </span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </li>
+        <li class="mw-100 my-3 border-bottom fs-3">
+          <a
+            class="text-reset text-decoration-none d-flex justify-content-between"
+            href="https://www.facebook.com/"
+          >
+            <span>
+              <i class="bi bi-facebook text-primary mx-2"></i>
+              Facebook 前端社群
+            </span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </li>
+        <li class="mw-100 my-3 border-bottom fs-3">
+          <a
+            class="text-reset text-decoration-none d-flex justify-content-between"
+            href="https://www.linkedin.com"
+          >
+            <span>
+              <i class="bi bi-linkedin text-primary mx-2"></i>
+              linkedin 職涯交流
+            </span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </li>
+        <li class="mw-100 my-3 border-bottom fs-3">
+          <a
+            class="text-reset text-decoration-none d-flex justify-content-between"
+            href="https://www.instagram.com/"
+          >
+            <span>
+              <i class="bi bi-instagram text-primary mx-2"></i>
+              Instagram 日常分享
+            </span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="title__card bg-white fs-3">
-      <p>嗨，我是 Alyse 一名深耕前端技術的工程師。</p>
-      <p>
-        擅長 React、Vue
-        等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
+
+    <!-- footer -->
+    <footer class="border-top">
+      <p class="text-center mt-4 mb-4">
+        © 2025 Alyse Wang. All rights reserved.
       </p>
-      <div class="media d-flex justify-content-evenly">
-        <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
-        <a href="https://podcasts.apple.com/tw/browse"
-          ><i class="bi bi-broadcast-pin"></i
-        ></a>
-        <a href="https://www.facebook.com/?locale=zh_TW"
-          ><i class="bi bi-facebook"></i
-        ></a>
-        <a href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-      </div>
-    </div>
+    </footer>
 
     <!-- Bootstrap -->
     <script

@@ -13,10 +13,31 @@
     right: 219px;
 }
 
-.success__card-second{
+.success__card-second {
     width: 526px;
     top: 250px;
     left: 770px;
     padding: 80px 40px;
     background-color: #F5F5F5;
+}
+
+.success__list {
+    background-color: #F5F5F5;
+    padding: 24px;
+    li{
+        margin: 0;
+    }
+    .s__img{
+        height: 80px;
+        width: 80px;
+    }
+    .s__title{
+        margin-top: 16px;
+    }
+    .s__contant{
+        margin-top: 8px;
+    }
+    .s__pod{
+        margin-top: 16px;
+    }
 }

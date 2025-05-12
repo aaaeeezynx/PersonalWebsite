@@ -49,7 +49,7 @@ contentArray.forEach(item => {
     img.className = 'c-img';
     img.loading = 'lazy';
 
-    const date = document.createElement('p');
+    const date = document.createElement('time');
     date.className = 'date';
     date.textContent = item.date;
 

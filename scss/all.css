@@ -9880,19 +9880,13 @@ body {
   margin-top: 160px;
 }
 
-.bg {
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 1920px;
-  width: 100%;
-  display: flex;
-  z-index: -1;
+.fs-28px {
+  font-size: 28px;
 }
 
 .bg__img {
-  height: 834px;
   width: 50%;
-  vertical-align: middle;
+  height: 834px;
 }
 
 img {
@@ -9903,10 +9897,30 @@ img {
 }
 
 .b-b {
-  width: 30px;
+  max-width: 30px;
   border-bottom: 5px solid;
 }
 
+@media (max-width: 375px) {
+  .bg__img {
+    width: 100%;
+    height: 375px;
+  }
+  .title__xl {
+    font-size: 52px;
+    max-width: 100%;
+  }
+  .title__lg {
+    max-width: 100%;
+    font-size: 48px;
+  }
+  .mt-80px {
+    margin-top: 64px;
+  }
+  .mt-160px {
+    margin-top: 128px;
+  }
+}
 /* 隱藏 Owl Carousel 預設箭頭樣式（使用更高特異性選擇器） */
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
@@ -9990,7 +10004,7 @@ img {
 }
 
 .title__card {
-  margin-top: 650px;
+  top: 650px;
   margin-left: 650px;
   width: 60%;
   padding: 60px 40px;
@@ -10001,15 +10015,13 @@ img {
   width: 220px;
 }
 
-.sub__bg {
-  right: 50%;
-}
-
 .sub__card {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 800px;
   height: 490px;
   padding: 80px;
-  z-index: 10;
 }
 .sub__card .sub__input {
   width: 100%;
@@ -10024,7 +10036,8 @@ img {
 .service {
   width: 80%;
   height: 320px;
-  margin: 64px auto;
+  margin: 0 auto;
+  margin-bottom: 64px;
 }
 .service .service__img {
   width: 60%;
@@ -10186,4 +10199,89 @@ li {
 }
 .success__list .s__pod {
   margin-top: 16px;
+}
+
+@media (max-width: 375px) {
+  .warp {
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+  .bg__img-sm-1 {
+    height: 356px;
+    margin-bottom: 270px;
+  }
+  .title__area {
+    width: 90%;
+    top: 400px;
+    left: 24px;
+  }
+  .title__card {
+    width: 351px;
+    left: 12px;
+    top: 650px;
+    margin-left: 0;
+    padding: 40px 24px;
+    flex-wrap: wrap;
+  }
+  .service {
+    width: 100%;
+    height: 410px;
+    margin-bottom: 32px;
+  }
+  .service .service__img {
+    width: 100%;
+    height: 176px;
+  }
+  .service .service__card {
+    width: 100%;
+    padding: 24px;
+  }
+  .service .card-r {
+    left: 0%;
+  }
+  .service .card-l {
+    right: 0%;
+  }
+  .success__main-img {
+    height: 578px;
+    width: 100%;
+    margin-bottom: 474px;
+  }
+  .success__card-first {
+    width: 100%;
+    padding: 40px 24px;
+    top: 466px;
+    left: 0px;
+    right: 0px;
+  }
+  .success__card-second {
+    width: 100%;
+    top: 746px;
+    left: 0px;
+    padding: 40px 24px;
+    background-color: #F5F5F5;
+  }
+  .success__list li {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .success__list .s__pod {
+    margin-top: 16px;
+  }
+  .bg__img-sm-2 {
+    width: 100%;
+    height: 440px;
+  }
+  .sub__card {
+    width: 351px;
+    height: 416px;
+    top: 12px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 40px 24px;
+    margin: 0;
+  }
+  .sub__card .sub__input {
+    width: 100%;
+  }
 }/*# sourceMappingURL=all.css.map */

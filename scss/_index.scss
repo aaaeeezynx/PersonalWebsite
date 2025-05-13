@@ -9,7 +9,7 @@
 }
 
 .title__card {
-    margin-top: 650px;
+    top: 650px;
     margin-left: 650px;
     width: 60%;
     padding: 60px 40px;
@@ -21,14 +21,14 @@
 }
 
 // 訂閱電子報
-.sub__bg{
-    right: 50%;
-}
+
 .sub__card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 800px;
     height: 490px;
     padding: 80px;
-    z-index: 10;
 
     .sub__input {
         width: 100%;

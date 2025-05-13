@@ -6,7 +6,8 @@ $('.owl-carousel').owlCarousel({
     dots: true, // 顯示導航點
     slideBy: 1, // 每次滑動一張
     responsive: {
-        0: { items: 1 }, // 行動裝置顯示一張
+        0: { items: 1 },
+        375: { items: 1 }, // 行動裝置顯示一張
         768: { items: 2 }, // 平板顯示兩張
         992: { items: 3 } // 桌面顯示三張
     }

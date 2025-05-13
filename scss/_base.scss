@@ -48,19 +48,13 @@ body {
     margin-top: 160px;
 }
 
-.bg {
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 1920px;
-    width: 100%;
-    display: flex;
-    z-index: -1;
+.fs-28px {
+    font-size: 28px;
 }
 
 .bg__img {
-    height: 834px;
     width: 50%;
-    vertical-align: middle;
+    height: 834px;
 }
 
 img {
@@ -70,6 +64,31 @@ img {
 }
 
 .b-b {
-    width: 30px;
+    max-width: 30px;
     border-bottom: 5px solid;
+}
+
+@media(max-width:375px) {
+    .bg__img {
+        width: 100%;
+        height: 375px;
+    }
+
+    .title__xl {
+        font-size: 52px;
+        max-width: 100%;
+    }
+    
+    .title__lg {
+        max-width: 100%;
+        font-size: 48px;
+    }
+
+    .mt-80px {
+        margin-top: 64px;
+    }
+
+    .mt-160px {
+        margin-top: 128px;
+    }
 }

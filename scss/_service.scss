@@ -1,7 +1,8 @@
 .service {
     width: 80%;
     height: 320px;
-    margin: 64px auto;
+    margin: 0 auto;
+    margin-bottom: 64px;
 
     .service__img {
         width: 60%;
@@ -21,4 +22,3 @@
         right: 55%;
     }
 }
-

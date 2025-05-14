@@ -1,9 +1,9 @@
 $('.owl-carousel').owlCarousel({
     items: 3, // 一次顯示三張卡片
-    loop: true, // 無限循環
+    loop: false, // 無限循環
     margin: 10, // 卡片間距
     nav: true, // 顯示導航箭頭
-    dots: true, // 顯示導航點
+    dots: false, // 顯示導航點
     slideBy: 1, // 每次滑動一張
     responsive: {
         0: { items: 1 },

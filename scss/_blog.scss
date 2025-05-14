@@ -51,7 +51,7 @@
 
         .tag {
             font-size: 24px;
-            margin: 0 5px;
+            margin: 0 6px;
             color: #0027D5;
             text-decoration: none;
         }
@@ -101,5 +101,17 @@
             background-color: #000000;
             color: white;
             transition: all 0.3s ease;
+        }
+    }
+
+    @media(max-width:375px) {
+        .tagArea {
+            .tag {
+                margin: 3px;
+            }
+
+            .hot {
+                width: 88px;
+            }
         }
     }

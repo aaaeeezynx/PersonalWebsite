@@ -10126,7 +10126,7 @@ li {
 }
 .tagArea .tag {
   font-size: 24px;
-  margin: 0 5px;
+  margin: 0 6px;
   color: #0027D5;
   text-decoration: none;
 }
@@ -10176,6 +10176,14 @@ li {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 375px) {
+  .tagArea .tag {
+    margin: 3px;
+  }
+  .tagArea .hot {
+    width: 88px;
+  }
+}
 .success__main-img {
   height: 626px;
   width: 58%;
@@ -10222,6 +10230,7 @@ li {
 
 @media (max-width: 375px) {
   .warp {
+    width: 100%;
     margin: 0 auto;
     padding: 0 12px;
   }

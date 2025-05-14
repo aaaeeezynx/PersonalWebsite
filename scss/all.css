@@ -9929,16 +9929,22 @@ img {
   transform: translateY(-50%);
   width: 44px;
   height: 44px;
-  background: #B2BEF2 !important; /* 自訂背景顏色 */
-  border-radius: 50%; /* 圓形按鈕 */
-  color: #fff !important; /* 圖標顏色 */
+  background: #B2BEF2 !important;
+  /* 自訂背景顏色 */
+  border-radius: 50%;
+  /* 圓形按鈕 */
+  color: #fff !important;
+  /* 圖標顏色 */
   font-size: 20px;
   line-height: 40px;
   text-align: center;
   transition: background 0.3s;
-  background-image: none !important; /* 確保隱藏預設背景圖標 */
-  border: none !important; /* 移除可能存在的邊框 */
-  outline: none !important; /* 移除焦點外框 */
+  background-image: none !important;
+  /* 確保隱藏預設背景圖標 */
+  border: none !important;
+  /* 移除可能存在的邊框 */
+  outline: none !important;
+  /* 移除焦點外框 */
 }
 
 /* 懸停效果 */
@@ -9971,12 +9977,14 @@ img {
 
 /* 左箭頭：bi-chevron-left */
 .owl-carousel .owl-nav button.owl-prev::before {
-  content: "\f12f"; /* Bootstrap Icons 的 chevron-left 字元碼 */
+  content: "\f12f";
+  /* Bootstrap Icons 的 chevron-left 字元碼 */
 }
 
 /* 右箭頭：bi-chevron-right */
 .owl-carousel .owl-nav button.owl-next::before {
-  content: "\f138"; /* Bootstrap Icons 的 chevron-right 字元碼 */
+  content: "\f138";
+  /* Bootstrap Icons 的 chevron-right 字元碼 */
 }
 
 /* 確保圖標居中並調整大小 */
@@ -9990,9 +9998,20 @@ img {
 /* 額外確保隱藏任何預設內容 */
 .owl-carousel .owl-nav button.owl-prev span,
 .owl-carousel .owl-nav button.owl-next span {
-  display: none !important; /* 隱藏可能存在的 span 標籤內容 */
+  display: none !important;
+  /* 隱藏可能存在的 span 標籤內容 */
 }
 
+@media (max-width: 375px) {
+  .owl-carousel .owl-nav button.owl-prev {
+    top: 550px;
+    left: 230px;
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    top: 550px;
+    right: 10px;
+  }
+}
 .warp {
   max-width: 1296px;
   margin: 0 auto;

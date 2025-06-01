@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 html, body, div, span, applet, object, iframe,
 h1,
 .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, blockquote, pre,
@@ -9833,6 +9834,14 @@ textarea.form-control-lg {
 body {
   background-color: #FBFBFB;
   z-index: -1;
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  max-width: 100%;
 }
 
 .relative {
@@ -9901,7 +9910,7 @@ img {
   border-bottom: 5px solid;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .bg__img {
     width: 100%;
     height: 375px;
@@ -10228,7 +10237,7 @@ li {
   margin-top: 16px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .warp {
     width: 100%;
     margin: 0 auto;

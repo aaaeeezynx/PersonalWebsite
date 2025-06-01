@@ -1,4 +1,4 @@
-@media(max-width:375px) {
+@media(max-width:380px) {
     .warp {
         width: 100%;
         margin: 0 auto;
@@ -17,8 +17,8 @@
     }
 
     .title__card {
-        width: 351px;
-        left: 12px;
+        width: 345px;
+        left: 10px;
         top: 650px;
         margin-left: 0;
         padding: 40px 24px;
@@ -56,7 +56,7 @@
     }
 
     .success__card-first {
-        width: 100%;
+        max-width: 100%;
         padding: 40px 24px;
         top: 466px;
         left: 0px;
@@ -64,7 +64,7 @@
     }
 
     .success__card-second {
-        width: 100%;
+        max-width: 100%;
         top: 746px;
         left: 0px;
         padding: 40px 24px;
@@ -88,7 +88,7 @@
     }
 
     .sub__card {
-        width: 351px;
+        max-width: 93%;
         height: 416px;
         top: 12px;
         left: 50%;

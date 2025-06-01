@@ -79,15 +79,15 @@
     /* 隱藏可能存在的 span 標籤內容 */
 }
 
-@media(max-width:375px) {
+@media(max-width:380px) {
     .owl-carousel .owl-nav button.owl-prev {
         top: 550px;
-        left: 230px;
+        left: 220px;
     }
 
     .owl-carousel .owl-nav button.owl-next {
         top: 550px;
-        right: 10px;
+        right: 20px;
     }
 
 }
